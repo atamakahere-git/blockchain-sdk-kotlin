@@ -107,6 +107,7 @@ internal object ExternalLinkProviderFactory {
             Blockchain.ZkLinkNova, Blockchain.ZkLinkNovaTestnet -> ZkLinkNovaExternalLinkProvider(isTestnet)
             Blockchain.Pepecoin, Blockchain.PepecoinTestnet -> PepecoinExternalLinkProvider(isTestnet)
             Blockchain.Hyperliquid, Blockchain.HyperliquidTestnet -> HyperliquidExternalLinkProvider(isTestnet)
+            Blockchain.Monad, Blockchain.MonadTestnet -> MonadExternalLinkProvider(isTestnet)
             Blockchain.Quai, Blockchain.QuaiTestnet -> QuaiExternalLinkProvider(isTestnet)
         }
     }

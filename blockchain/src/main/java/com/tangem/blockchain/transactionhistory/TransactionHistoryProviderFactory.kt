@@ -57,6 +57,7 @@ internal object TransactionHistoryProviderFactory {
             Blockchain.Blast,
             Blockchain.Gnosis,
             Blockchain.Hyperliquid,
+            Blockchain.Monad,
             Blockchain.Mantle,
             Blockchain.Moonbeam,
             Blockchain.Moonriver,
