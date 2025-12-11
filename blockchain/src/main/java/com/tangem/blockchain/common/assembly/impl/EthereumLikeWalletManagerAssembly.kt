@@ -172,6 +172,7 @@ internal class EthereumLikeWalletManagerAssembly(
             Blockchain.Scroll, Blockchain.ScrollTestnet -> ScrollProvidersBuilder(providerTypes)
             Blockchain.ZkLinkNova, Blockchain.ZkLinkNovaTestnet -> ZkLinkNovaProvidersBuilder(providerTypes)
             Blockchain.Hyperliquid, Blockchain.HyperliquidTestnet -> HyperliquidProvidersBuilder(providerTypes)
+            Blockchain.Monad, Blockchain.MonadTestnet -> MonadProvidersBuilder(providerTypes)
             Blockchain.Quai, Blockchain.QuaiTestnet -> QuaiProvidersBuilder(providerTypes)
             else -> error("Unsupported blockchain: $blockchain")
         }

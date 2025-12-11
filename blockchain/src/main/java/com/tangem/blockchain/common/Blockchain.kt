@@ -208,6 +208,8 @@ enum class Blockchain(
     PepecoinTestnet("pepecoin/test", "PEP", "Pepecoin Testnet"),
     Hyperliquid("hyperliquid", "HYPE", "Hyperliquid EVM"),
     HyperliquidTestnet("hyperliquid/test", "HYPE", "Hyperliquid EVM Testnet"),
+    Monad("monad", "MON", "Monad EVM"),
+    MonadTestnet("monad/test", "MON", "Monad EVM Testnet"),
     Quai("quai", "QUAI", "Quai"),
     QuaiTestnet("quai/test", "QUAI", "Quai Testnet"),
     ;
@@ -346,6 +348,7 @@ enum class Blockchain(
         Scroll, ScrollTestnet,
         ZkLinkNova, ZkLinkNovaTestnet,
         Hyperliquid, HyperliquidTestnet,
+        Monad, MonadTestnet,
         Quai, QuaiTestnet,
         -> 18
 
@@ -452,6 +455,7 @@ enum class Blockchain(
             Scroll, ScrollTestnet,
             ZkLinkNova, ZkLinkNovaTestnet,
             Hyperliquid, HyperliquidTestnet,
+            Monad, MonadTestnet,
             -> EthereumAddressService()
 
             Quai, QuaiTestnet -> QuaiAddressService()
@@ -603,6 +607,7 @@ enum class Blockchain(
             Scroll, ScrollTestnet -> ScrollTestnet
             Pepecoin, PepecoinTestnet -> PepecoinTestnet
             Hyperliquid, HyperliquidTestnet -> HyperliquidTestnet
+            Monad, MonadTestnet -> MonadTestnet
             Quai, QuaiTestnet -> QuaiTestnet
             Unknown,
             Cardano,
@@ -717,6 +722,7 @@ enum class Blockchain(
             ZkLinkNova, ZkLinkNovaTestnet,
             Pepecoin, PepecoinTestnet,
             Hyperliquid, HyperliquidTestnet,
+            Monad, MonadTestnet,
             Quai, QuaiTestnet,
             -> listOf(EllipticCurve.Secp256k1)
 
@@ -835,6 +841,8 @@ enum class Blockchain(
             PepecoinTestnet -> Chain.PepecoinTestnet.id
             Hyperliquid -> Chain.Hyperliquid.id
             HyperliquidTestnet -> Chain.HyperliquidTestnet.id
+            Monad -> Chain.Monad.id
+            MonadTestnet -> Chain.MonadTestnet.id
             Quai -> Chain.Quai.id
             QuaiTestnet -> Chain.QuaiTestnet.id
             else -> null
