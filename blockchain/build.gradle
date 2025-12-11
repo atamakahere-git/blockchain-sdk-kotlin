@@ -23,6 +23,26 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+
+        debug {
+            minifyEnabled false
+        }
+
+        // Additional build types to match tangem-app-android
+        create("external") {
+            initWith(getByName("release"))
+            matchingFallbacks = ['release']
+        }
+
+        create("internal") {
+            initWith(getByName("release"))
+            matchingFallbacks = ['release']
+        }
+
+        create("mocked") {
+            initWith(getByName("release"))
+            matchingFallbacks = ['release']
+        }
     }
 
     compileOptions {
